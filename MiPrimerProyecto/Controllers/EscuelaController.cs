@@ -13,9 +13,12 @@ namespace MiPrimerProyecto.Controllers
         public IActionResult Index()
         {
             var escuela = new Escuela();
-            escuela.AñoFundacion = 2005;
-            escuela.EscuelaId = Guid.NewGuid().ToString();
+            escuela.AñoDeCreación = 2005;
+            escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzy Academy";
+
+            //Uso de ViewBag
+            ViewBag.FechaActual = DateTime.Now;
 
             //Enviar la escuela a la vista
             return View(escuela);
