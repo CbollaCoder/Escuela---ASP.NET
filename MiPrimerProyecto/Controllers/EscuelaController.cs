@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MiPrimerProyecto.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,13 @@ namespace MiPrimerProyecto.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            var escuela = new Escuela();
+            escuela.AñoFunacion = 2005;
+            escuela.EscuelaId = Guid.NewGuid().ToString();
+            escuela.Nombre = "Platzy Academy";
+
+            //Enviar la escuela a la vista
+            return View(escuela);
         }
     }
 }
