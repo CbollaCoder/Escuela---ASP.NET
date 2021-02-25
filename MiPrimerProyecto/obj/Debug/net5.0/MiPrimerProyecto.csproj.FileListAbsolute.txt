@@ -38,3 +38,4 @@ E:\OTROS\PLATZI\4_Curso de ASP.NET Core\MiPrimerProyecto\MiPrimerProyecto\obj\De
 E:\OTROS\PLATZI\4_Curso de ASP.NET Core\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\net5.0\MiPrimerProyecto.pdb
 E:\OTROS\PLATZI\4_Curso de ASP.NET Core\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\net5.0\MiPrimerProyecto.genruntimeconfig.cache
 E:\OTROS\PLATZI\4_Curso de ASP.NET Core\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\net5.0\MiPrimerProyecto.csproj.CopyComplete
+E:\OTROS\PLATZI\4_Curso de ASP.NET Core\MiPrimerProyecto\MiPrimerProyecto\obj\Debug\net5.0\Razor\Views\Escuela\Index.cshtml.g.cs

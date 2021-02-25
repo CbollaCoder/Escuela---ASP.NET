@@ -8,6 +8,7 @@ namespace MiPrimerProyecto.Controllers
 {
     public class EscuelaController : Controller
     {
+        
         public IActionResult Index()
         {
             return View();
