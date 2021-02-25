@@ -50,7 +50,8 @@ namespace MiPrimerProyecto
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    //Cambiar la ruta por defecto
+                    pattern: "{controller=Escuela}/{action=Index}/{id?}");
             });
         }
     }

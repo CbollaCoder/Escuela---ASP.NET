@@ -13,7 +13,7 @@ namespace MiPrimerProyecto.Controllers
         public IActionResult Index()
         {
             var escuela = new Escuela();
-            escuela.AñoFunacion = 2005;
+            escuela.AñoFundacion = 2005;
             escuela.EscuelaId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzy Academy";
 

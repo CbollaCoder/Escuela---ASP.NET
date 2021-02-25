@@ -12,6 +12,6 @@ namespace MiPrimerProyecto.Models
 
         public string Nombre { get; set; }
 
-        public int AñoFunacion { get; set; }
+        public int AñoFundacion { get; set; }
     }
 }
