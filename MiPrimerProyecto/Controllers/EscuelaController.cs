@@ -16,6 +16,10 @@ namespace MiPrimerProyecto.Controllers
             escuela.AñoDeCreación = 2005;
             escuela.UniqueId = Guid.NewGuid().ToString();
             escuela.Nombre = "Platzy Academy";
+            escuela.Ciudad = "Bogotá";
+            escuela.Pais = "Colombia";
+            escuela.Dirección = "Av. Siempre Viva, #1950";
+            escuela.TipoEscuela = TiposEscuela.Secundaria;
 
             //Uso de ViewBag
             ViewBag.FechaActual = DateTime.Now;

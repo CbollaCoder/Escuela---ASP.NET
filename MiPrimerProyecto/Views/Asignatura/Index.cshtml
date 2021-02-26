@@ -1,25 +1,17 @@
 ﻿@* Para convertirlo en fuertemente tipado e indicarle que únicamente permita objetos derivados del modelo Escuela  *@
 
-@model Escuela
+@model Asignatura
 @* Declarando código Razor en una sola línea , se inicia la línea con @*@
 @* Declarando código Razor en más de una línea con @ + {} *@
 
 @{
-    ViewData["Title"] = "Información Escuela";
-    Layout = "_Layout"; //Se le indica que utlice una plantilla situada en la carpeta Shared
+    ViewData["Title"] = "Información de Asignatura";
+    Layout = "Simple"; //Se le indica que utlice una plantilla situada en la carpeta Shared
 }
 
 
 <h1> @ViewData["Title"] </h1>
 <h2> Nombre: @Model.Nombre </h2>
-<h3> Tipo de Escuela: @Model.TipoEscuela</h3>
-<address>
-    <p> Dirección: @Model.Dirección</p>
-    <p> País: @Model.Pais</p>
-    <p> Ciudad:@Model.Ciudad</p>
-</address>
-
-<p><strong> Año de fundación: @Model.AñoDeCreación </strong></p>
 
 @*Acceder al ViewBag*@
 <p><strong><i> Fecha Actual: @ViewBag.FechaActual </i></strong></p>
