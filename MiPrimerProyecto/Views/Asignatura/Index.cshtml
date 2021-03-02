@@ -11,7 +11,19 @@
 
 
 <h1> @ViewData["Title"] </h1>
-<h2> Nombre: @Model.Nombre </h2>
+
+<strong> Desde la vista normal </strong>
+<p>
+    Nombre: @Model.Nombre <br />
+    Id: @Model.UniqueId
+</p>
+
+<strong> Desde la vista parcial</strong>
+@* "partial": Elemento que ya traer ASP.Net Core que se utiliza como tag helper para extender el html desde el lado del servidor.*@
+@*Por convencion, se asume que si no pasamos el modelo entonces, se utiiza el modelo ya contemplado en la vista actual *@
+@* Otro parametro puede ser "model" *@
+<partial name="AsignaturaSimple" />
+
 
 @*Acceder al ViewBag*@
 <p><strong><i> Fecha Actual: @ViewBag.FechaActual </i></strong></p>

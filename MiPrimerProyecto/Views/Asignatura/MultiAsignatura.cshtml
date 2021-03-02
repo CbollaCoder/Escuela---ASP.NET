@@ -1,0 +1,20 @@
+﻿@* Para convertirlo en fuertemente tipado e indicarle que únicamente permita objetos derivados del modelo Escuela  *@
+
+@model List<Asignatura>
+@* Declarando código Razor en una sola línea , se inicia la línea con @*@
+@* Declarando código Razor en más de una línea con @ + {} *@
+
+@{
+    ViewData["Title"] = "Información de Asignatura";
+    Layout = "Simple"; //Se le indica que utlice una plantilla situada en la carpeta Shared
+}
+
+
+<h1> @ViewData["Title"] </h1>
+<strong> Desde la vista normal </strong>
+
+@foreach (var asignatura in Model)
+{
+    <partial name="AsignaturaSimple" model="asignatura" />
+}
+
